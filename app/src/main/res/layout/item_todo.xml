@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:paddingStart="16dp"
     android:paddingEnd="16dp">
 
@@ -15,6 +15,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:text="Example"
+        android:padding="4dp"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/toDoCheckBox"
         app:layout_constraintEnd_toStartOf="@+id/toDoCheckBox"
