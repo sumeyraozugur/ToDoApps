@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         binding.buttonAdd.setOnClickListener {
             val todoTitle = binding.enterSomething.text.toString()
             if(todoTitle.isNotEmpty()) {
-                val todo = ToDo(todoTitle)
+                val todo = ToDo(todoTitle)  // object from ToDo data class
                 todoApp.addTodo(todo)
                 binding.enterSomething.text.clear()
 

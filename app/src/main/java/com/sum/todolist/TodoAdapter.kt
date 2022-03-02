@@ -34,9 +34,13 @@ class TodoAdapter(private val todoList: MutableList<ToDo>):RecyclerView.Adapter<
 
     private fun toggleStrikeThrough(tvTodoTitle: TextView, isChecked: Boolean) {
         if(isChecked) {
-            tvTodoTitle.paintFlags = tvTodoTitle.paintFlags or STRIKE_THRU_TEXT_FLAG
+            tvTodoTitle.paintFlags= tvTodoTitle.paintFlags or STRIKE_THRU_TEXT_FLAG //üstünü çizer and first paintFlags from set the other one is from get
+            println("checked")
+
         } else {
-            tvTodoTitle.paintFlags = tvTodoTitle.paintFlags and STRIKE_THRU_TEXT_FLAG.inv()
+           tvTodoTitle.paintFlags = tvTodoTitle.paintFlags and STRIKE_THRU_TEXT_FLAG.inv() // üst çizmeyi geri alır
+            println("not checked")
+
         }
     }
 
